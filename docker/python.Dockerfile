@@ -3,6 +3,7 @@ FROM python:3.11-alpine
 WORKDIR /usr/src/app
 
 ENV FLASK_APP=app.py
+ENV FLASK_RUN_HOST=0.0.0.0
 # watch app' files
 ENV FLASK_DEBUG=true
 ENV FLASK_ENV=development
